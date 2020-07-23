@@ -6,12 +6,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/public/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-    <a href="/crud">Go to crud</a>
-    <br>
-    <a href="/load">Load from file</a>
+    @yield('content')
 </div>
 </body>
 </html>

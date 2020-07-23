@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/load', 'SeedController@load');
+Route::resource('crud', 'CrudController');
